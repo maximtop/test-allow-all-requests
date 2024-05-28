@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Allowlist Example",
+    "version": "1.0",
+    "description": "An example extension to allowlist a specific website using declarativeNetRequest.",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "declarativeNetRequestWithHostAccess",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
